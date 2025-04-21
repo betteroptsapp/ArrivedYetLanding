@@ -17,9 +17,25 @@
           return null;
         }
         
-        if (!getCookie('userLanguageChoice')) {
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        const userChoice = getCookie('userLanguageChoice');
+        
+        if (userChoice) {
+          let targetPage = 'index.html';
+          
+          if (userChoice === 'en') {
+            targetPage = 'index-en.html';
+          } else if (userChoice === 'zh-Hans') {
+            targetPage = 'index-zh-Hans.html';
+          } else if (userChoice === 'zh-Hant') {
+            targetPage = 'index.html';
+          }
+          
+          if (currentPage !== targetPage) {
+            window.location.href = targetPage;
+          }
+        } else {
           const userLang = navigator.language || navigator.userLanguage;
-          const currentPage = window.location.pathname.split('/').pop();
           
           if (currentPage === 'index.html' || currentPage === '') {
             let targetPage = 'index.html';
@@ -34,7 +50,7 @@
               targetPage = 'index.html';
             }
             
-            if (targetPage !== currentPage && (currentPage === 'index.html' || currentPage === '')) {
+            if (targetPage !== currentPage) {
               window.location.href = targetPage;
             }
           }
