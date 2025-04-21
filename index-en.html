@@ -438,4 +438,22 @@
   ]
 }</script>
 
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-analytics.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyDV7p6GmvC5053m4_ylXQOgajqY4t04yRU",
+    authDomain: "arrivedyet.firebaseapp.com",
+    projectId: "arrivedyet",
+    storageBucket: "arrivedyet.firebasestorage.app",
+    messagingSenderId: "488651306743",
+    appId: "1:488651306743:web:b710131c7da3328ab945f2",
+    measurementId: "G-ZKMVEJ3FHN"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
 </body></html>
