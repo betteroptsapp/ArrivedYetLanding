@@ -1,8 +1,8 @@
 <!DOCTYPE html><html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArrivedYet - Hong Kong Public Transport Real-time Information App</title>
-    <meta name="description" content="ArrivedYet provides the most accurate Hong Kong MTR real-time arrival information, helping you plan your journey and arrive on time.">
+    <title>ArrivedYet - MTR and Light Rail arrival predictions</title>
+    <meta name="description" content="Save the MTR and Light Rail stations you use every day. Open ArrivedYet to see predicted arrival times, direction, and platform. You can also check arrival information for some MTR Bus routes.">
     <meta name="keywords" content="到站未,ArrivedYet,香港地鐵,港鐵,實時到站,交通應用,公共交通,MTR,香港交通">
     <meta name="author" content="到站未 ArrivedYet">
     <meta name="robots" content="index, follow">
@@ -60,14 +60,14 @@
     
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://betteroptsapp.github.io/ArrivedYetLanding/">
-    <meta property="og:title" content="ArrivedYet - Hong Kong Public Transport Real-time Information App">
-    <meta property="og:description" content="ArrivedYet provides the most accurate Hong Kong MTR real-time arrival information, helping you plan your journey and arrive on time.">
+    <meta property="og:title" content="ArrivedYet - MTR and Light Rail arrival predictions">
+    <meta property="og:description" content="Save the MTR and Light Rail stations you use every day. Open ArrivedYet to see predicted arrival times, direction, and platform. You can also check arrival information for some MTR Bus routes.">
     <meta property="og:image" content="https://betteroptsapp.github.io/ArrivedYetLanding/images/app-screenshot-main.png">
     
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://betteroptsapp.github.io/ArrivedYetLanding/">
-    <meta property="twitter:title" content="ArrivedYet - Hong Kong Public Transport Real-time Information App">
-    <meta property="twitter:description" content="ArrivedYet provides the most accurate Hong Kong MTR real-time arrival information, helping you plan your journey and arrive on time.">
+    <meta property="twitter:title" content="ArrivedYet - MTR and Light Rail arrival predictions">
+    <meta property="twitter:description" content="Save the MTR and Light Rail stations you use every day. Open ArrivedYet to see predicted arrival times, direction, and platform. You can also check arrival information for some MTR Bus routes.">
     <meta property="twitter:image" content="https://betteroptsapp.github.io/ArrivedYetLanding/images/app-screenshot-main.png">
     
     <link rel="apple-touch-icon" sizes="180x180" href="images/app-logo-small.png">
@@ -84,25 +84,26 @@
   "@context": "https://schema.org",
   "@type": "MobileApplication",
   "name": "ArrivedYet",
-  "operatingSystem": "Android",
+  "operatingSystem": [
+    "Android 11 or later",
+    "iOS 15.1 or later"
+  ],
   "applicationCategory": "Travel App, Transportation App",
   "offers": {
     "@type": "Offer",
     "price": "0",
     "priceCurrency": "HKD"
   },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "ratingCount": "120"
-  },
-  "description": "ArrivedYet provides the most accurate Hong Kong MTR real-time arrival information, helping you plan your journey and arrive on time.",
+  "description": "Save the MTR and Light Rail stations you use every day. Open ArrivedYet to see predicted arrival times, direction, and platform. You can also check arrival information for some MTR Bus routes.",
   "screenshot": [
     "https://betteroptsapp.github.io/ArrivedYetLanding/images/screen-favorites-en.png",
     "https://betteroptsapp.github.io/ArrivedYetLanding/images/screen-station-detail-en.png",
     "https://betteroptsapp.github.io/ArrivedYetLanding/images/screen-line-selection-en.png"
   ],
-  "downloadUrl": "https://play.google.com/store/apps/details?id=com.betteropts.ArrivalTime",
+  "downloadUrl": [
+    "https://play.google.com/store/apps/details?id=com.betteropts.ArrivalTime",
+    "https://apps.apple.com/hk/app/hk-mtr-light-rail-arrivedyet/id6801209371"
+  ],
   "author": {
     "@type": "Organization",
     "name": "到站未 ArrivedYet"
@@ -116,7 +117,7 @@
                 <img src="images/app-logo.png" alt="到站未 Logo" class="logo" width="60" height="60">
                 <div class="logo-text">
                     <h1>ArrivedYet</h1>
-                    <p class="tagline">Hong Kong Public Transport Real-time Info</p>
+                    <p class="tagline">MTR and Light Rail arrival predictions</p>
                 </div>
             </div>
             <nav class="main-nav" aria-label="主導航">
@@ -138,14 +139,16 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h2 class="hero-title">Real-time Train Arrival Information</h2>
-                <p class="hero-description">ArrivedYet provides the most accurate Hong Kong MTR real-time arrival information, helping you plan your journey and arrive on time.</p>
+                <h2 class="hero-title">Your next train, right when you open the app.</h2>
+                <p class="hero-description">Save the MTR and Light Rail stations you use every day. Open ArrivedYet to see predicted arrival times, direction, and platform. You can also check arrival information for some MTR Bus routes.</p>
                 <div class="cta-buttons">
-                    <a href="https://play.google.com/store/apps/details?id=com.betteropts.ArrivalTime" target="_blank" class="btn btn-primary" rel="noopener"><i class="fab fa-google-play"></i> Google Play</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.betteropts.ArrivalTime" target="_blank" class="btn btn-primary store-link store-link-play" rel="noopener noreferrer"><i class="fab fa-google-play" aria-hidden="true"></i> Android · Google Play</a>
+                    <a href="https://apps.apple.com/hk/app/hk-mtr-light-rail-arrivedyet/id6801209371" target="_blank" class="btn btn-primary store-link store-link-apple" rel="noopener noreferrer"><i class="fab fa-apple" aria-hidden="true"></i> iPhone · App Store</a>
                 </div>
+                <p class="prediction-note">MTR arrival predictions may change as services operate.</p>
             </div>
             <div class="hero-image">
-                <img src="images/app-screenshot-main-en.png" alt="ArrivedYet provides the most accurate Hong Kong MTR real-time arrival information, helping you plan your journey and arrive on time." width="375" height="812" loading="eager">
+                <img src="images/app-screenshot-main-en.png" alt="ArrivedYet app screen" width="375" height="812" loading="eager">
             </div>
         </div>
     </section>
@@ -158,8 +161,8 @@
                     <div class="feature-icon">
                         <i class="fas fa-train" aria-hidden="true"></i>
                     </div>
-                    <h3 itemprop="name">Real-time MTR Info</h3>
-                    <p itemprop="description">Provides real-time train arrival predictions for all MTR lines, including platform information and train status indicators.</p>
+                    <h3 itemprop="name">MTR and Light Rail arrivals</h3>
+                    <p itemprop="description">See predicted arrival times, direction, and platform at supported stations.</p>
                 </div>
                 <div class="feature-card" itemscope="" itemtype="https://schema.org/ItemList">
                     <div class="feature-icon">
@@ -173,7 +176,7 @@
                         <i class="fas fa-eye" aria-hidden="true"></i>
                     </div>
                     <h3 itemprop="name">Quick View Function</h3>
-                    <p itemprop="description">Quickly check real-time information for any station without adding to favorites.</p>
+                    <p itemprop="description">Check another supported station without adding it to favorites.</p>
                 </div>
                 <div class="feature-card" itemscope="" itemtype="https://schema.org/ItemList">
                     <div class="feature-icon">
@@ -186,15 +189,15 @@
                     <div class="feature-icon">
                         <i class="fas fa-clock" aria-hidden="true"></i>
                     </div>
-                    <h3 itemprop="name">Accurate Predictions</h3>
-                    <p itemprop="description">Displays precise train arrival times, minute countdown, and delay status alerts.</p>
+                    <h3 itemprop="name">MTR-provided predictions</h3>
+                    <p itemprop="description">See predicted train arrivals and service status. Predictions may change.</p>
                 </div>
                 <div class="feature-card" itemscope="" itemtype="https://schema.org/ItemList">
                     <div class="feature-icon">
                         <i class="fas fa-bus" aria-hidden="true"></i>
                     </div>
-                    <h3 itemprop="name">Bus Integration Coming Soon</h3>
-                    <p itemprop="description">Future versions will integrate real-time bus arrival information for a comprehensive transit platform.</p>
+                    <h3 itemprop="name">MTR Bus arrivals</h3>
+                    <p itemprop="description">Check arrival information for some MTR Bus routes. Some routes currently have no arrival data.</p>
                 </div>
             </div>
         </div>
@@ -232,17 +235,10 @@
     <section id="download" class="download">
         <div class="container">
             <h2 class="section-title">Download Now</h2>
-            <p class="download-description">ArrivedYet is now available on Google Play Store, free to download and use.</p>
+            <p class="download-description">ArrivedYet is free to download on iPhone and Android.</p>
             <div class="download-buttons">
-                <a href="https://play.google.com/store/apps/details?id=com.betteropts.ArrivalTime" target="_blank" class="download-btn" rel="noopener">
-                    <img src="images/google-play-badge.png" alt="Google Play下載按鈕" width="180" height="53" loading="lazy">
-                </a>
-            </div>
-            <div class="qr-code">
-                <div class="qr-item">
-                    <img src="images/google-play-qr.png" alt="Google Play QR碼 - 掃描下載到站未應用" width="150" height="150" loading="lazy">
-                    <p>Scan for Android Download</p>
-                </div>
+                <a href="https://play.google.com/store/apps/details?id=com.betteropts.ArrivalTime" target="_blank" class="btn btn-primary store-link store-link-play" rel="noopener noreferrer"><i class="fab fa-google-play" aria-hidden="true"></i> Android · Google Play</a>
+                <a href="https://apps.apple.com/hk/app/hk-mtr-light-rail-arrivedyet/id6801209371" target="_blank" class="btn btn-primary store-link store-link-apple" rel="noopener noreferrer"><i class="fab fa-apple" aria-hidden="true"></i> iPhone · App Store</a>
             </div>
         </div>
     </section>
@@ -252,16 +248,15 @@
             <h2 class="section-title">About Us</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>ArrivedYet is a transit information app designed for Hong Kong residents and tourists, committed to providing the most accurate and timely public transportation information.</p>
-                    <p>Our goal is to use technology innovation to help every user easily access public transit information and optimize their travel experience.</p>
-                    <p>The data used by the app comes from public information provided by the MTR Corporation and is continuously updated to maintain accuracy.</p>
+                    <p>ArrivedYet helps you check arrival information for MTR, Light Rail, and some MTR Bus routes.</p>
+                    <p>Save your usual stations or quickly check another supported station.</p>
+                    <p>Arrival predictions are provided by MTR and may change as services operate.</p>
                 </div>
                 <div class="tech-info">
                     <h3>Technical Information</h3>
                     <ul>
-                        <li><strong>Data Source:</strong> MTR Real-time Train Service Information API</li>
-                        <li><strong>Supported Platform:</strong> Android 11.0+</li>
-                        <li><strong>Future Updates:</strong> Bus and minibus integration, route planning features</li>
+                        <li><strong>Data Source:</strong> MTR open arrival data</li>
+                        <li><strong>Supported platforms:</strong> Android 11+; iPhone with iOS 15.1+</li>
                     </ul>
                 </div>
             </div>
@@ -294,10 +289,7 @@
             </div>
             <div class="footer-bottom">
                 <p>© 2025 ArrivedYet. All rights reserved.</p>
-                <p class="data-disclaimer">Data sourced from MTR Corporation.</p>
-                <div class="site-map">
-                    <a href="sitemap.xml">網站地圖</a>
-                </div>
+                <p class="data-disclaimer">MTR arrival predictions may change; some MTR Bus routes have no arrival data.</p>
             </div>
         </div>
     </footer>
@@ -434,7 +426,8 @@
   "url": "https://betteroptsapp.github.io/ArrivedYetLanding",
   "logo": "https://betteroptsapp.github.io/ArrivedYetLanding/images/app-logo.png",
   "sameAs": [
-    "https://play.google.com/store/apps/details?id=com.betteropts.ArrivalTime"
+    "https://play.google.com/store/apps/details?id=com.betteropts.ArrivalTime",
+    "https://apps.apple.com/hk/app/hk-mtr-light-rail-arrivedyet/id6801209371"
   ]
 }</script>
 
@@ -455,5 +448,8 @@
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
 </script>
+
+
+
 
 </body></html>
